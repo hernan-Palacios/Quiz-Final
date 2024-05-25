@@ -89,6 +89,24 @@ jugador.
         }
     }
 
+    static void Mover(int dx, int dy)
+    {
+        
+        int posX = 0, posY = 0;
+        for (int i = 0; i < tablero.GetLength(0); i++)
+        {
+            for (int j = 0; j < tablero.GetLength(1); j++)
+            {
+                if (tablero[i, j] == 0)
+                {
+                    posX = i;
+                    posY = j;
+                    break;
+                }
+            }
+        }
 
-}
+
+
+    } 
 }
