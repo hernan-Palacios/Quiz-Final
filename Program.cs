@@ -121,5 +121,7 @@ jugador.
         }
     }
 
+    static void MostrarTablero()
+
 } 
 }
