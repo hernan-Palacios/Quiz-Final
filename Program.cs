@@ -141,7 +141,7 @@ jugador.
                     Console.Write(tablero[i, j] + " ");
                 }
             }
-            
+            Console.WriteLine();
         }
     }
 }
