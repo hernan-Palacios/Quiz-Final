@@ -126,6 +126,24 @@ jugador.
     }
 
     static void MostrarTablero()
-
-} 
+    {
+        // Mostramos el tablero en consola
+        for (int i = 0; i < tablero.GetLength(0); i++)
+        {
+            for (int j = 0; j < tablero.GetLength(1); j++)
+            {
+                if (tablero[i, j] == 0)
+                {
+                    Console.Write("0 ");
+                }
+                else
+                {
+                    Console.Write(tablero[i, j] + " ");
+                }
+            }
+            
+        }
+    }
 }
+
+ 
