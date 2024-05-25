@@ -34,7 +34,19 @@ jugador.
  Mostrar el puntaje acumulado del jugador. */
 
 
+        InicializarTablero(5); // Inicializamos el tablero con tamaño 5x5
 
+        ConsoleKeyInfo tecla;
+        do
+        {
+            MostrarTablero(); 
+            Console.WriteLine("Puntaje: " + puntaje); 
+            Console.WriteLine("Elija una opción:");
+            Console.WriteLine("1. Mover Derecha");
+            Console.WriteLine("2. Mover Izquierda");
+            Console.WriteLine("3. Mover Arriba");
+            Console.WriteLine("4. Mover Abajo");
+            Console.WriteLine("Esc para Salir del Juego");
 
-    }
+        }
 }
