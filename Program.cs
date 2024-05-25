@@ -34,7 +34,7 @@ jugador.
  Mostrar el puntaje acumulado del jugador. */
 
 
-        InicializarTablero(5); // Inicializamos el tablero con tamaño 5x5
+        InicializaTablero(5); // Inicializamos el tablero con tamaño 5x5
 
         ConsoleKeyInfo tecla;
         do
@@ -72,6 +72,21 @@ jugador.
                     break;
             }
         } while (tecla.Key != ConsoleKey.Escape);
+    }
+
+    static void InicializaTablero(int n) //metodo para inicializar el tablero, me genera error la variable tablero
+    {
+        tablero = new int[n, n]; 
+
+        
+        Random rnd = new Random();
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                tablero[i, j] = rnd.Next(1, 10);
+            }
+        }
     }
 
 
