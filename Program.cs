@@ -89,7 +89,7 @@ jugador.
         }
     }
 
-    static void Mover(int dx, int dy)
+    static void Mover(int hx, int hy)
     {
         
         int posX = 0, posY = 0;
@@ -106,7 +106,20 @@ jugador.
             }
         }
 
+        
+        int nuevaPosX = posX + hx;
+        int nuevaPosY = posY + hy;
 
+       
+        if (nuevaPosX >= 0 && nuevaPosX < tablero.GetLength(0) &&
+            nuevaPosY >= 0 && nuevaPosY < tablero.GetLength(1))
+        {
+            
+            puntaje += tablero[nuevaPosX, nuevaPosY];
+            tablero[posX, posY] = tablero[nuevaPosX, nuevaPosY];
+            tablero[nuevaPosX, nuevaPosY] = 0;
+        }
+    }
 
-    } 
+} 
 }
