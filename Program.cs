@@ -53,9 +53,9 @@ jugador.
             Console.WriteLine("Esc para Salir del Juego");
 
 
-            tecla = Console.ReadKey(true); // Leemos la tecla presionada
+            tecla = Console.ReadKey(true);
 
-            // Dependiendo de la tecla presionada, ejecutamos la acción correspondiente
+            
             switch (tecla.Key)
             {
                 case ConsoleKey.RightArrow:
