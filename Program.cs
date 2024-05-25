@@ -48,5 +48,32 @@ jugador.
             Console.WriteLine("4. Mover Abajo");
             Console.WriteLine("Esc para Salir del Juego");
 
-        }
+
+            tecla = Console.ReadKey(true); // Leemos la tecla presionada
+
+            // Dependiendo de la tecla presionada, ejecutamos la acción correspondiente
+            switch (tecla.Key)
+            {
+                case ConsoleKey.RightArrow:
+                case ConsoleKey.D:
+                    Mover(0, 1);
+                    break;
+                case ConsoleKey.LeftArrow:
+                case ConsoleKey.A:
+                    Mover(0, -1);
+                    break;
+                case ConsoleKey.UpArrow:
+                case ConsoleKey.W:
+                    Mover(-1, 0);
+                    break;
+                case ConsoleKey.DownArrow:
+                case ConsoleKey.S:
+                    Mover(1, 0);
+                    break;
+            }
+        } while (tecla.Key != ConsoleKey.Escape);
+    }
+
+
+}
 }
