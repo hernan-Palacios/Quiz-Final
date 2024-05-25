@@ -1,5 +1,9 @@
 ﻿internal class Program
 {
+
+    static int[,] tablero; 
+    static int puntaje = 0; 
+
     private static void Main(string[] args)
     {
         //Quiz final
